@@ -7,4 +7,5 @@ ularning ismlarini chiqarib bering.
 """
 r=requests.get('https://jsonplaceholder.typicode.com/users')
 data=r.json()
-print(data)
+for value  in data:
+    print(value['name'])
